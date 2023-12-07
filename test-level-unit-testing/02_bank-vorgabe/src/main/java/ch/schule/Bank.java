@@ -9,6 +9,15 @@ import java.util.*;
  */
 public class Bank
 {
+	private static Bank instance;
+
+	// Public method to get the singleton instance
+	public static Bank getInstance() {
+		if (instance == null) {
+			instance = new Bank();
+		}
+		return instance;
+	}
 	/**
 	 * Liste aller Konti.
 	 */
