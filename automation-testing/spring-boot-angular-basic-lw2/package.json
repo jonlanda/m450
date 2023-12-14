@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.0.7"
+  },
+  "dependencies": {
+    "@angular/common": "^17.0.7",
+    "@angular/core": "^17.0.7",
+    "@angular/forms": "^17.0.7",
+    "@angular/platform-browser": "^17.0.7",
+    "@angular/platform-browser-dynamic": "^17.0.7",
+    "@angular/router": "^17.0.7"
+  }
+}
