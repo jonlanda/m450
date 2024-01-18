@@ -35,5 +35,3 @@ Das Programm besteht aus einer einfachen Konsolenanwendung, die Benutzereingaben
 3. Durchführung von Unittests mit JUnit, um sicherzustellen, dass die Funktionen wie erwartet arbeiten.
 4. Debuggen und Anpassen des Codes bei Bedarf, um alle Testfälle erfolgreich zu bestehen.
 5. Abschlussprüfung, um sicherzustellen, dass die Gesamtfunktionalität des Programms korrekt ist.
-
-Mit diesem Testkonzept können Sie sicherstellen, dass Ihr "Football Player Stats Comparator" zuverlässig und gemäß den Spezifikationen funktioniert.
