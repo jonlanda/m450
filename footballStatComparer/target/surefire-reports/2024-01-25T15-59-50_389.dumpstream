@@ -1,0 +1,4 @@
+# Created at 2024-01-25T15:59:52.812
+Boot Manifest-JAR contains absolute paths in classpath 'D:\dokumente\tbz\m450\footballStatComparer\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
