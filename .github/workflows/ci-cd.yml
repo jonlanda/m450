@@ -32,7 +32,7 @@ jobs:
         run: mvn -f footballStatComparer/pom.xml clean install
 
       - name: Run Tests
-        run: mvn test
+        run: mvn -f footballStatComparer/pom.xml test
 
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
