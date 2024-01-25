@@ -34,7 +34,11 @@ jobs:
       - name: Run Tests
         run: mvn -f footballStatComparer/pom.xml test
 
-      - name: Deploy to GitHub Pages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      - name: Publish Test Reports to GitHub Pages
+        if: success()
         run: |
-          # Add deployment steps here
+          mkdir -p docs/test-reports
+          cp -r target/surefire-reports/* docs/test-reports/
+          git add docs/
+          git commit -m "Add test reports" || true
+          git push origin main
