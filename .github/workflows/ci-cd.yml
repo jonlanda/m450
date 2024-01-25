@@ -44,7 +44,7 @@ jobs:
         if: success()
         run: |
           mkdir -p docs/test-reports
-          cp -r target/surefire-reports/* docs/test-reports/
+          cp -r footballStatComparer/target/surefire-reports/* docs/test-reports/
           git add docs/
           git commit -m "Add test reports" || true
           git push origin main
