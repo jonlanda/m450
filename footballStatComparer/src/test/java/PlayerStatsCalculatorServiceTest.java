@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 
 public class PlayerStatsCalculatorServiceTest {
 
-    private PlayerStatsCalculatorService calculator;
+    public static PlayerStatsCalculatorService calculator;
 
     @BeforeAll
-    public void setUp() {
+    public static void setUp() {
         calculator = new PlayerStatsCalculatorService();
     }
 
