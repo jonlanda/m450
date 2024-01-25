@@ -37,9 +37,6 @@ jobs:
       - name: Print Current Directory
         run: pwd
 
-      - name: List Contents of surefire-reports
-        run: ls -R target/surefire-reports
-
       - name: Publish Test Reports to GitHub Pages
         if: success()
         run: |
