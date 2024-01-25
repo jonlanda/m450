@@ -34,11 +34,10 @@ jobs:
       - name: Run Tests
         run: mvn -f footballStatComparer/pom.xml test
 
-      - name: Print Current Directory
-        run: pwd
-
-      - name: List Directories
-        run: ls -l
+      - name: Configure Git Identity
+        run: |
+          git config user.email "jonlanda06@gmail.com"
+          git config user.name "Jon Landa"
 
       - name: Publish Test Reports to GitHub Pages
         if: success()
