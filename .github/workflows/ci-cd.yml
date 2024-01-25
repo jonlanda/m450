@@ -2,10 +2,10 @@ name: CI/CD Pipeline
 
 on:
   push:
-    path:
-      - footballStatComparer/
+    paths:
+      - 'footballStatComparer/**'
     branches:
-      - main  # Adjust the branch name as needed
+      - main
 
 jobs:
   build:
@@ -29,4 +29,4 @@ jobs:
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
-
+          # Add deployment steps here
