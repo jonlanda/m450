@@ -24,7 +24,7 @@ jobs:
           check-latest: false
           server-id: 'github'
           server-username: ${{ github.actor }}
-          server-password: ${{ secrets.GITHUB_TOKEN }}
+          server-password: ${{ secrets.GH_TOKEN }}
           overwrite-settings: true
           job-status: 'success'
 
