@@ -28,7 +28,6 @@ jobs:
 
       - name: Run Tests
         run: mvn -f footballStatComparer/pom.xml test
-        env: ${{ secrets.GH_TOKEN }}
 
       - name: Configure Git Identity
         run: |
