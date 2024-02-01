@@ -14,7 +14,7 @@ public class FootballPlayerStatsComparator {
         double points1 = calculator.calculatePoints(player1);
         double points2 = calculator.calculatePoints(player2);
 
-        System.out.println("\nPlayer 0 points: " + points1);
+        System.out.println("\nPlayer 1 points: " + points1);
         System.out.println("Player 2 points: " + points2);
 
         if (points1 > points2) {
