@@ -43,4 +43,4 @@ jobs:
           git commit -m "Add test reports" || true
           git push origin main
         env:
-          GH_TOKEN: ${{ GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
