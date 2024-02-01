@@ -9,6 +9,8 @@ on:
 
 jobs:
   build:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
 
     steps:
@@ -45,4 +47,6 @@ jobs:
           cp -r footballStatComparer/target/surefire-reports/* docs/test-reports/
           git add docs/
           git commit -m "Add test reports" || true
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/jonlanda/m450.git main
+          git push origin main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
